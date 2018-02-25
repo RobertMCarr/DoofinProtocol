@@ -1,0 +1,29 @@
+{
+    "deploy": {
+        "packages": [
+            {
+                "name": "DoofinProtocol.Lambda",
+                "description": "Lambda",
+                "files": [
+                    "src/*/**"
+                ],
+                "deployOnSave": false,
+                "button": {
+                    "text": "Deploy to Zip",
+                    "tooltip": "Click here to deploy",
+
+                    "targets": [ "zip" ]
+                }
+            }
+        ],
+        "targets": [
+            {
+                "type": "zip",
+                "name": "DoofinProtocol",
+                "description": "Create a ZIP file in a target directory",
+                "target": "C:/git/DoofinProtocolAlexaSkill",
+                "fileName": "DoofinProtocol.zip"
+            }
+        ]
+    }
+}
